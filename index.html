@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DJ Sinatra — Brooklyn → New York → Tokyo</title>
   <meta name="description" content="DJ Sinatra — One of the most sought-after nightlife DJs in the world. Brooklyn born. New York refined. Tokyo resident.">
+  <meta property="og:title" content="DJ Sinatra — Global Nightlife">
+  <meta property="og:description" content="Brooklyn → New York → Tokyo. One of the most sought-after nightlife DJs in the world.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://djsinatra.com">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,33 +16,103 @@
 </head>
 <body>
 
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__inner">
+      <div class="preloader__text">DJ Sinatra</div>
+      <div class="preloader__line"></div>
+    </div>
+  </div>
+
+  <!-- FILM GRAIN OVERLAY -->
+  <div class="grain"></div>
+
+  <!-- CURSOR GLOW (desktop only) -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
   <!-- HERO -->
   <section id="hero" class="hero">
     <div class="hero__bg"></div>
+    <div class="hero__ambient"></div>
     <div class="hero__content">
-      <h1 class="hero__title">DJ Sinatra</h1>
-      <p class="hero__subtitle">Brooklyn &rarr; New York &rarr; Tokyo</p>
-      <p class="hero__tagline">Global Nightlife</p>
-      <div class="hero__actions">
+      <div class="hero__title-wrap">
+        <h1 class="hero__title" data-animate="split">DJ Sinatra</h1>
+      </div>
+      <p class="hero__subtitle hero__fade-up">Brooklyn &rarr; New York &rarr; Tokyo</p>
+      <p class="hero__tagline hero__fade-up">Global Nightlife</p>
+      <div class="hero__actions hero__fade-up">
         <a href="https://instagram.com/djsinatra" target="_blank" rel="noopener" class="btn btn--primary">Follow on Instagram</a>
         <a href="#bookings" class="btn btn--ghost">Bookings</a>
       </div>
     </div>
     <div class="hero__scroll-hint">
+      <div class="hero__scroll-text">Scroll</div>
       <span></span>
     </div>
   </section>
+
+  <!-- MARQUEE TICKER -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span class="ticker__item">New York</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Tokyo</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">London</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Dubai</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Paris</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Miami</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Seoul</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Ibiza</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">New York</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Tokyo</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">London</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Dubai</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Paris</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Miami</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Seoul</span>
+      <span class="ticker__sep">&bull;</span>
+      <span class="ticker__item">Ibiza</span>
+      <span class="ticker__sep">&bull;</span>
+    </div>
+  </div>
 
   <!-- BIOGRAPHY -->
   <section id="biography" class="section biography">
     <div class="container">
       <div class="section__label reveal">Biography</div>
       <div class="biography__content">
-        <p class="reveal">Brooklyn-born DJ Sinatra is one of the most sought-after nightlife DJs in the world, known for high-energy sets that blend hip-hop, R&B, reggaeton, afrobeats, amapiano, and global club sounds. With a career rooted in New York City's legendary nightlife scene, Sinatra built his reputation as a DJ who knows how to move a crowd and create unforgettable moments on the dance floor.</p>
+        <p class="biography__lead reveal">Brooklyn-born DJ Sinatra is one of the most sought-after nightlife DJs in the world.</p>
+        <p class="reveal">Known for high-energy sets that blend hip-hop, R&B, reggaeton, afrobeats, amapiano, and global club sounds. With a career rooted in New York City's legendary nightlife scene, Sinatra built his reputation as a DJ who knows how to move a crowd and create unforgettable moments on the dance floor.</p>
         <p class="reveal">Originally starting his career as an audio engineer, Sinatra transitioned into DJing in the early 2000s and quickly became a fixture in some of the most influential clubs and events around the world. His ability to read a room and seamlessly mix genres has made him a favorite among celebrities, brands, and international nightlife audiences alike.</p>
-        <p class="reveal">Throughout his career, DJ Sinatra has performed at exclusive events and after-parties for artists and brands including Bruno Mars, Miley Cyrus, and Dolce &amp; Gabbana, as well as major celebrations like the New York Yankees' 2009 World Series after-party. His global presence has taken him from New York to destinations across Europe, Asia, and beyond.</p>
+        <p class="reveal">Throughout his career, DJ Sinatra has performed at exclusive events and after-parties for artists and brands including Bruno Mars, Miley Cyrus, and Dolce &amp; Gabbana, as well as major celebrations like the New York Yankees' 2009 World Series after-party.</p>
         <p class="reveal">Now based between New York and Tokyo, Sinatra serves as a resident DJ at 1 OAK Tokyo, where his signature sound continues to bring together international crowds and nightlife culture from around the world.</p>
-        <p class="reveal">Whether performing in elite clubs, private celebrity events, or global nightlife destinations, DJ Sinatra delivers a sound and experience that represents the energy of Brooklyn, the style of New York, and the pulse of the international dance floor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AS SEEN / PRESS -->
+  <section id="press" class="section press">
+    <div class="container">
+      <div class="section__label reveal">As Seen With</div>
+      <div class="press__grid">
+        <div class="press__item reveal">Bruno Mars</div>
+        <div class="press__item reveal">Miley Cyrus</div>
+        <div class="press__item reveal">Dolce &amp; Gabbana</div>
+        <div class="press__item reveal">NY Yankees</div>
+        <div class="press__item reveal">1 OAK Tokyo</div>
       </div>
     </div>
   </section>
@@ -84,6 +158,41 @@
     </div>
   </section>
 
+  <!-- INSTAGRAM FEED -->
+  <section id="instagram" class="section instagram">
+    <div class="container">
+      <div class="section__label reveal">Instagram</div>
+      <div class="instagram__header reveal">
+        <h2 class="instagram__headline">@djsinatra</h2>
+        <a href="https://instagram.com/djsinatra" target="_blank" rel="noopener" class="btn btn--ghost">Follow</a>
+      </div>
+      <div class="instagram__feed reveal" id="instagramFeed">
+        <!-- Elfsight Instagram Feed Widget -->
+        <!-- SETUP: Go to elfsight.com, create a free account, create an Instagram Feed widget,
+             copy your widget code, and replace this comment with it.
+             Example: <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                      <div class="elfsight-app-XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" data-elfsight-app-lazy></div> -->
+        <div class="instagram__placeholder">
+          <div class="instagram__placeholder-grid">
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+            <div class="instagram__placeholder-item"></div>
+          </div>
+          <p class="instagram__placeholder-note">Instagram feed loads here — <a href="https://elfsight.com/instagram-feed-widget/" target="_blank" rel="noopener">Connect with Elfsight</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- SOCIAL CTA -->
   <section id="social" class="section social">
     <div class="container">
@@ -100,7 +209,8 @@
     <div class="container">
       <div class="section__label reveal">Bookings</div>
       <div class="bookings__content reveal">
-        <p class="bookings__text">Club appearances, private events, collaborations.</p>
+        <h2 class="bookings__headline">Let's Work Together</h2>
+        <p class="bookings__text">Club appearances, private events, brand collaborations, international bookings.</p>
         <a href="mailto:booking@djsinatra.com" class="bookings__email">booking@djsinatra.com</a>
       </div>
     </div>
@@ -109,8 +219,14 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <p class="footer__name">DJ Sinatra</p>
-      <p class="footer__locations">New York &bull; Tokyo</p>
+      <div class="footer__inner">
+        <p class="footer__name">DJ Sinatra</p>
+        <p class="footer__locations">New York &bull; Tokyo</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/djsinatra" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <p class="footer__copy">&copy; 2026 DJ Sinatra. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
